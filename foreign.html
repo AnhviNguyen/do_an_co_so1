@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Dancing+Script:wght@400;600;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="foreign.css">
+</head>
+<body>
+
+    <!-- <div id="loader"></div> -->
+
+    <header>
+        <header>
+            <a href="#" class="logo">Lit.</a>
+            <nav class="navbar">
+                <a class="active" href="index.html" id="home">Home</a>
+                <a href="list.html">List</a>
+                <a href="foreign.html">Foreign books</a>
+                <a href="about.html">About</a>
+                <a href="#" class="header-login-btn">Login</a>
+                <span><ion-icon class="search-icon" name="search-outline"></ion-icon></span>
+            </nav>
+            <div class="navbar-after">
+                <a href="index.html" >Home</a> 
+                <a href="list.html">List</a>
+                <a href="foreign.html">Foreign books</a>
+                <a href="about.html">About</a>
+                <a href="#" class="header-login-btn">Login</a>
+            </div>
+            <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+        </header>
+   </header>
+
+   <form action="" class="search-form">
+        <input type="search" class="search-box" placeholder="search here ...">
+        <label for="" class="fas fa-search"></label>
+        <i class="fa fa-times" aria-hidden="true" id="close"></i>
+   </form>
+
+
+
+<form class="login-register">
+    <div class="wrapped"> 
+        <span class="close"><ion-icon name="close-outline"></ion-icon></span>
+        <div class="form-box-login">
+            <div class="box-login">
+                <h2>Login</h2>
+                <form action="">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></ion-icon></span>
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="renember-forgot">
+                    <label for=""><input type="checkbox">  Renember me</label>
+                    <a href="">Fogot Password</a>
+                </div>
+                <button class="login-btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account </p>
+                    <a href="#" class="register-link">Register</a>
+                </div>
+                </form>
+            </div>
+
+            <div class="box-register">
+                <h2>Registration</h2>
+                <form action="">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label for="">Username</label>
+                </div>                    
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></ion-icon></span>
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="renember-forgot">
+                    <label for=""><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button class="login-btn">Rgister</button>
+                <div class="login-register">
+                    <p>Already have an account </p>
+                    <a href="#" class="login-link">Login</a>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+<section class="slide">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper"> 
+            <div class="swiper-slide slide-box">
+                <img style="height: 750px ; width: 100%;  object-fit: cover; " src="img/bamboo.jpg">
+                <div class="slide-info-box" data-aos="fade-left" data-aos-duration="1000" >
+                    <div data-aos="fade-up" data-aos-duration="2000" class="slide-info">
+                        <h4>NOVEL</h4>
+                        <h1>THE WISDOM OF THE BULLFLOG: LEADERSHIP MADE SIMPLE</h1>
+                        <h3>Rando Kim</h3>
+                        <p> Admiral McRaven was honored to receive this honor in 2011 when he took charge of the United States Special Operations Command. When McRaven retired in 2014, he had 37 years as a Navy SEAL under his belt.</p>
+                        <button class="btn1">READ MORE</button>
+                        <button class="btn2">BUY NOW</button>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" class="slide-book-box">
+                    <img  class="slide-book" src="img/book3.jpg" alt="">
+                </div>
+            </div>
+        
+            <div class="swiper-slide slide-box">
+                <img style="height: 750px ; width: 100%;  object-fit: cover; " src="img/evening.jpg" alt="">
+                <div class="slide-info-box" data-aos="fade-left" data-aos-duration="1000" >
+                    <div data-aos="fade-up" data-aos-duration="2000" class="slide-info">
+                        <h4>SELF-HELP</h4>
+                        <h1>STOP OVERTHINKING</h1>
+                        <h3>Nick Trenton</h3>
+                        <p>Overthinking is the biggest cause of unhappiness. Don't get stuck in a never-ending thought loop. Stay present and keep your mind off things that don't matter, and never will.
+                            Break free of your self-imposed mental prison.
+                        </p>
+                        <button class="btn1">READ MORE</button>
+                        <button class="btn2">BUY NOW</button>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" class="slide-book-box">
+                    <img  class="slide-book" src="img/book8.jpg" alt="">
+                </div>
+            </div>
+        
+            <div class="swiper-slide slide-box">
+                <img style="height: 750px ; width: 100%;  object-fit: cover; " src="img/waves.jpg" alt="">
+                <div class="slide-info-box" data-aos="fade-left" data-aos-duration="1000" >
+                    <div data-aos="fade-up" data-aos-duration="2000" class="slide-info">
+                        <h4>SELF-HELP</h4>
+                        <h1>THE 48 LAWS OF THE POWER</h1>
+                        <h3>Robert Greene</h3>
+                        <p>Robert Greene and Joost Elffers have distilled three thousand years of the history of power into 48 essential laws by drawing from the philosophies of Machiavelli, Sun Tzu, and Carl Von Clausewitz and also from the lives of figures ranging from Henry Kissinger to P.T. Barnum.</p>
+                        <button class="btn1">READ MORE</button>
+                        <button class="btn2">BUY NOW</button>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" class="slide-book-box">
+                    <img  class="slide-book" src="img/book4.jpg" alt="">
+                </div>
+            </div>
+        
+            <div class="swiper-slide slide-box">
+                <img style="height: 750px ; width: 100%;  object-fit: cover; " src="img/japan.jpg" alt="">
+                <div class="slide-info-box" data-aos="fade-left" data-aos-duration="1000" >
+                    <div data-aos="fade-up" data-aos-duration="2000" class="slide-info">
+                        <h4>SELF-HELP</h4>
+                        <h1>DISRUPTIVE THINKING</h1>
+                        <h3> T. D. Jakes, Nick Chiles</h3>
+                        <p>For most of our lives, we are encouraged to trudge along the well-worn paths of those who have come before us. We learn the rules – in our families, in our schools, in our workplaces, in our churches – and most of the messages we receive tell us that following the rules will allow us to arrive at the lives we desire. . </p>
+                        <button class="btn1">READ MORE</button>
+                        <button class="btn2">BUY NOW</button>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" class="slide-book-box">
+                    <img  class="slide-book" src="img/bookk7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<section class="feature-wrapp" >
+    <div class="flex-container">
+        <div data-aos="fade-right"
+        data-aos-duration="900" class="feature">
+            <ion-icon class="icon" name="pencil-outline"></ion-icon>
+            <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; color: #594B43; ">Textbooks</h1>
+            <p>You can mark important verses or sentences that you like in the book.</p>
+           <label for=""><b>READ MORE</b></label>
+        </div>
+
+        <div data-aos="fade-right"
+        data-aos-duration="1200" class="feature">
+            <ion-icon class="icon" name="book-outline"></ion-icon>
+            <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; color: #594B43; ">Easy Return</h1>
+            <p>when you want to go back to the previous pages to read again,...</p>
+           <label for=""><b>READ MORE  </b></label>
+        </div>
+
+        <div data-aos="fade-right"
+        data-aos-duration="1500" class="feature">
+            <ion-icon class="icon" name="library-outline"></ion-icon>
+            <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; color: #594B43; ">Book Fairs </h1>
+            <p> Provide you with quick and timely events, book fairs....to reveice the good price</p>
+           <label for=""><b>READ MORE  </b></label>
+        </div>
+
+        <div data-aos="fade-right"
+        data-aos-duration="1800" class="feature" style="border: none;">
+            <ion-icon class="icon" name="laptop-outline"></ion-icon>
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color: #594B43; ">E-Reading </h2>
+            <p> At a lower cost than buying real books, you can still read the books you like.</p>
+           <label for=""><b>READ MORE  </b></label>
+        </div>   
+    </div>
+</section>
+
+<section class="cate-wrapp">
+    <divc class="cate-box">
+        <div data-aos="zoom-out"  data-aos-duration="800" class="category">
+            <img src="img/flower.jpg" alt="">
+            <div class="content">
+                <p style="color: #765940; margin-top: 20%;"><b>WRITTING</b></p>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 24px;">Self-Publishing and Book Printing</p>
+                <p class="cate-content" style="color: gray;">You can write your own story. Thanks to that, you can do it yourself and feel free to do what you like</p>
+                <label for=""><b>READ MORE  </b></label>
+            </div>
+        </div>
+
+        <div data-aos="zoom-out"  data-aos-duration="1500" class="category">
+            <img src="img/category-2.jpg" alt="">
+            <div class="content">
+                <p style="color: #765940; margin-top: 20%;"><b>COLLECTING</b></p>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 24px;">New, Rare And Out-of-Print Books</p>
+                <p class="cate-content" style="color: gray;">Collect new and rare books to enrich your knowledge at extremely affordable prices.</p>
+                <label for=""><b>READ MORE  </b></label>
+            </div>
+        </div>
+
+        <div data-aos="zoom-out"  data-aos-duration="2000" class="category">
+            <img src="img/category-3.jpg" alt="">
+            <div class="content">
+                <p style="color: #765940; margin-top: 20%;"><b>COMMUNITY </b></p>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 24px;">Where Books And People Meet</p>
+                <p class="cate-content"  style="color: gray;">
+                    We often organize offline sessions for book lovers to talk to each other and encourage each other.</p>
+                <label for=""><b>READ MORE  </b></label>
+            </div>
+        </div>
+   </divc>
+</section>
+
+<section style="padding: 100px 100px 150px 100px">
+    <div class="author-box">
+        <div> <img src="img/tacgia.png" alt=""></div>
+        <div class="author-info">
+            <p style="font-size: 30px;font-weight: 500; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 700;">"The more we desire, the more we fear, and the more we fear, the more we suffer."</p>
+            <p style="font-family: 'Dancing Script', cursive; font-size: 28px;">-Baird Thomas Spalding in  "Life and Teaching of the Masters of the Far East"</p>
+            <p style="color: gray; line-height: 20px; margin-bottom: 20px;">The source of suffering is the lack of fulfillment of these desires. When there is lack of fulfillment, the desire begins to suffer. Suffering can be big or small, lengthy or instantaneous, general or personal, and so forth.</p>
+            <div>
+                <button class="author-info-btn1">View More</button>
+                <button class="author-info-btn2">Shop Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="sec-book1" >
+    <div >
+        <div class="book1" style="text-align: center;">
+            <p style="font-family: 'Dancing Script', cursive;font-size: 30px; color: #594B43;" >We have</p>
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 34px;">Featured Releases</p>
+            <p style="color: gray ;">There are many kinds of books that have just been released but the prices are very favorable</p>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <div class="book1-btn">
+                    <p>SELF-HELP</p>
+                    <p>FANTASY</p>
+                    <P>HISTORY</P>
+                </div>
+            </div>
+        </div>
+    
+        <div class="book1-wrap">
+            
+            <div style="height: 480px; width: 280px; min-width:250px;">
+                <div class="book1-box">
+                    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/book1.jpg" alt="">
+                    </div>
+                    <div class="book1-icon">
+                        <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                        <span><ion-icon name="search-outline"></ion-icon></span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                    <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                </div>
+    
+                <div class="book1-info">
+                    <p>Healing After Loss</p>
+                    <p style="color: gray;">Books</p>
+                    <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">12.00$</p>
+                </div>
+            </div>
+    
+            
+            <div style="height: 480px; width: 280px; min-width:250px;">
+                <div class="book1-box">
+                    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/book2.jpg" alt="">
+                    </div>
+                    <div class="book1-icon">
+                        <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                        <span><ion-icon name="search-outline"></ion-icon></span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                    <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                </div>
+    
+                <div class="book1-info">
+                    <p>Outlive the science & art </p>
+                    <p style="color: gray;">Books</p>
+                    <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">18.00$</p>
+                </div>
+            </div>
+    
+            
+            <div style="height: 480px; width: 280px; min-width:250px;">
+                <div class="book1-box">
+                    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/book3.jpg" alt="">
+                    </div>
+                    <div class="book1-icon">
+                        <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                        <span><ion-icon name="search-outline"></ion-icon></span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                    <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                </div>
+    
+                <div class="book1-info">
+                    <p>The Wisdom of the Bullffrog</p>
+                    <p style="color: gray;">Books</p>
+                    <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">20.00$</p>
+                </div>
+            </div>
+    
+            
+            <div style="height: 480px; width: 280px; min-width:250px;">
+                <div class="book1-box">
+                    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/book4.jpg" alt="">
+                    </div>
+                    <div class="book1-icon">
+                        <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                        <span><ion-icon name="search-outline"></ion-icon></span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                    <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                </div>
+    
+                <div class="book1-info">
+                    <p>Power</p>
+                    <p style="color: gray;">Books</p>
+                    <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">15.00$</p>
+                </div>
+            </div>
+    
+            
+            <div style="height: 480px; width: 280px; min-width:250px;">
+                <div class="book1-box">
+                    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/book5.jpg" alt="">
+                    </div>
+                    <div class="book1-icon">
+                        <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                        <span><ion-icon name="search-outline"></ion-icon></span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                    <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                </div>
+    
+                <div class="book1-info">
+                    <p>Tell me your life story, Mom</p>
+                    <p style="color: gray;">Books</p>
+                    <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">17.00$</p>
+                </div>
+            </div>
+    
+            
+            <div style="height: 480px; width: 280px; min-width:250px;">
+                <div class="book1-box">
+                    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/book12.jpg" alt="">
+                    </div>
+                    <div class="book1-icon">
+                        <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                        <span><ion-icon name="search-outline"></ion-icon></span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                    <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                </div>
+    
+                <div class="book1-info">
+                    <p>Boundaries</p>
+                    <p style="color: gray;">Books</p>
+                    <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">21.00$</p>
+                </div>
+            </div>
+    
+            
+            <div style="height: 480px; width: 280px; min-width:250px;">
+                <div class="book1-box">
+                    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/book8.jpg" alt="">
+                    </div>
+                    <div class="book1-icon">
+                        <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                        <span><ion-icon name="search-outline"></ion-icon></span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                    <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                </div>
+    
+                <div class="book1-info">
+                    <p>Stop overthinking</p>
+                    <p style="color: gray;">Books</p>
+                    <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">18.00$</p>
+                </div>
+            </div>
+    
+            
+            <div style="height: 480px; width: 280px; min-width:250px;">
+                <div class="book1-box">
+                    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                        <img src="img/book11.jpg" alt="">
+                    </div>
+                    <div class="book1-icon">
+                        <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                        <span><ion-icon name="search-outline"></ion-icon></span>
+                        <span><ion-icon name="heart-outline"></ion-icon></span>
+                    </div>
+                    <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                </div>
+    
+                <div class="book1-info">
+                    <p>The silva mind control method</p>
+                    <p style="color: gray;">Books</p>
+                    <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">15.00$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+
+<section style="width: 100%; margin-top: 100px;">
+   <div>
+        <div>
+            
+        </div>
+   </div>
+    <div class="best-seller">
+        <div class="best-seller-img" >
+            <img class="best-seller1" src="img/nature1.jpg" alt="">
+            <img data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" class="best-seller2" src="img/book6.jpg" alt="">
+        </div>
+        <div  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="best-seller-info">
+            <p style="font-family: 'Dancing Script', cursive; font-size: 30px; color: #594B43;">World Bestseller</p>
+            <p style="font-size: 40px; font-family: Georgia, 'Times New Roman', Times, serif;">The Mountain is You</p>
+            <p style="line-height: 30px;"> Coexisting but conflicting needs create self-sabotaging behaviors. This is why we resist efforts to change, often until they feel completely futile. But by extracting crucial insight from our most damaging habits.</p>
+            <div style="margin-top: 30px;">
+                <button class="author-info-btn1">View More</button>
+                <button class="author-info-btn2">Shop Now</button>
+            </div>
+        </div>
+   </div>
+
+   <div class="best-seller" style="flex-direction: row-reverse;">
+        <div style="width: 50%;" >
+            <img class="best-seller1" src="img/nature2.jpg" alt="">
+            <img data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" class="best-seller3" src="img/book10.jpg" alt="">
+        </div>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="best-seller-info">
+            <p style="font-family: 'Dancing Script', cursive; font-size: 30px; color: #594B43;">World Bestseller</p>
+            <p style="font-size: 40px; font-family: Georgia, 'Times New Roman', Times, serif;">12 Rules for life an antidote to chaos</p>
+            <p style="line-height: 30px;">  It provides life advice through essays in abstract ethical principles, psychology, mythology, religion, and personal anecdotes. In the book, Peterson offers practical advice for how to navigate the complexities of life and find meaning and purpose.</p>
+            <div style="margin-top: 30px;">
+                <button class="author-info-btn1">View More</button>
+                <button class="author-info-btn2">Shop Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="margin: 200px 0 200px 0">
+        <div class="swiper mySwiper1" >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide listbook" style="background-color: brown;">
+                    <img src="img/listbook1.jpg" alt="">
+                    <div class="listbook-info">
+                        <div>
+                            <p style="font-size: 15px;">Risotto & Beyond</p>
+                            <p class="literature">Literature</p>
+                            <p style="font-weight: 700;">30.00$</p>
+                            <button><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+            
+                        <div class="listbook-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide listbook" style="background-color: brown;">
+                    <img src="img/listbook2.jpg" alt="">
+                    <div class="listbook-info">
+                        <div>
+                            <p style="font-size: 15px;">The great Outdoor</p>
+                            <p class="literature">Literature</p>
+                            <p style="font-weight: 700;">33.00$</p>
+                            <button><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+            
+                        <div class="listbook-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide listbook" style="background-color: brown;">
+                    <img src="img/listbook3.jpg" alt="">
+                    <div class="listbook-info">
+                        <div>
+                            <p style="font-size: 15px;">Upgrade</p>
+                            <p class="literature">Literature</p>
+                            <p style="font-weight: 700;">28.00$</p>
+                            <button><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+            
+                        <div class="listbook-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide listbook" style="background-color: brown;">
+                    <img src="img/listbook4.jpg" alt="">
+                    <div class="listbook-info">
+                        <div>
+                            <p style="font-size: 15px;">Wonderland 2</p>
+                            <p class="literature">Literature</p>
+                            <p style="font-weight: 700;">42.00$</p>
+                            <button><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+            
+                        <div class="listbook-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide listbook" style="background-color: brown;">
+                    <img src="img/listbook5.jpg" alt="">
+                    <div class="listbook-info">
+                        <div>
+                            <p style="font-size: 15px;">Rock the Boat</p>
+                            <p class="literature">Literature</p>
+                            <p style="font-weight: 700;">37.00$</p>
+                            <button><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+            
+                        <div class="listbook-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="swiper-slide listbook" style="background-color: brown;">
+                    <img src="img/listbook6.jpg" alt="">
+                    <div class="listbook-info">
+                        <div>
+                            <p style="font-size: 15px;">Land Rover</p>
+                            <p class="literature">Literature</p>
+                            <p style="font-weight: 700;">40.00$</p>
+                            <button><ion-icon name="cart-outline"></ion-icon></button>
+                        </div>
+            
+                        <div class="listbook-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+</section>
+
+<section >
+    <div class="advertisment">
+        <img src="img/typewriter.png" alt="">
+        <div style="display: flex;">
+            <div class="advertisment-content">
+                <div style="width: 350px;">
+                     <p style="color: lightgray;">BECOME OUR PARTNER</p>
+                     <p style="font-size: 35px; font-family: Georgia, 'Times New Roman', Times, serif; margin-bottom: 20px;">Self- <span style="font-family: Georgia, 'Times New Roman', Times, serif; color: #8C837B;">Pushing</span> and Book Printing</p>
+                     <p style="margin-bottom: 20px;color: lightgray;">Free to write what you like. If you can, you can earn more money, too convenient, isn't it</p>
+                     <p class="advertisment-btn">View More</p>
+                </div>
+             </div>
+             <div class="advertisment-img">
+                 <img src="img/waves.jpg" alt="">
+                 <img src="img/flower.jpg" alt="" srcset="">
+             </div>
+        </div>
+    </div>
+</section>
+
+<section class="sec-book1"> 
+        <div class="book1" style="text-align: center;">
+            <p style="font-family: 'Dancing Script', cursive;font-size: 30px; color: #594B43;" >Books</p>
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 34px;">Coming Soon</p>
+            <p style="color: gray ; margin-bottom: 80px;"> We will release it as soon as the book has been released. this helps you read the latest books at a reasonable price</p>
+        </div>
+        
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">   
+                <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center; flex-direction: column;  min-width: 280px;">
+                    <div class="book1-box">
+                        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <img src="img/book1.jpg" alt="">
+                        </div>
+                        <div class="book1-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                        <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+        
+                    <div class="book1-info">
+                        <p>Healing After Loss</p>
+                        <p style="color: gray;">Books</p>
+                        <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">12.00$</p>
+                    </div>
+                </div>
+        
+                
+                <div class="swiper-slide"style="display: flex; justify-content: center; align-items: center; flex-direction: column;  min-width: 280px;" >
+                    <div class="book1-box">
+                        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <img src="img/book2.jpg" alt="">
+                        </div>
+                        <div class="book1-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                        <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+        
+                    <div class="book1-info">
+                        <p>Outlive the science & art </p>
+                        <p style="color: gray;">Books</p>
+                        <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">18.00$</p>
+                    </div>
+                </div>
+        
+                
+                <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center; flex-direction: column;  min-width: 280px;">
+                    <div class="book1-box">
+                        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <img src="img/book3.jpg" alt="">
+                        </div>
+                        <div class="book1-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                        <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+        
+                    <div class="book1-info">
+                        <p>The Wisdom of the Bullffrog</p>
+                        <p style="color: gray;">Books</p>
+                        <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">20.00$</p>
+                    </div>
+                </div>
+        
+                
+                <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center; flex-direction: column;  min-width: 280px;" >
+                    <div class="book1-box">
+                        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <img src="img/book4.jpg" alt="">
+                        </div>
+                        <div class="book1-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                        <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+        
+                    <div class="book1-info">
+                        <p>Power</p>
+                        <p style="color: gray;">Books</p>
+                        <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">15.00$</p>
+                    </div>
+                </div>
+        
+                
+                <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center; flex-direction: column;  min-width: 280px;">
+                    <div class="book1-box">
+                        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <img src="img/book5.jpg" alt="">
+                        </div>
+                        <div class="book1-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                        <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+        
+                    <div class="book1-info">
+                        <p>Tell me your life story, Mom</p>
+                        <p style="color: gray;">Books</p>
+                        <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">17.00$</p>
+                    </div>
+                </div>
+        
+                
+                <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center; flex-direction: column;  min-width: 280px;">
+                    <div class="book1-box">
+                        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <img src="img/book12.jpg" alt="">
+                        </div>
+                        <div class="book1-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                        <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+        
+                    <div class="book1-info">
+                        <p>Boundaries</p>
+                        <p style="color: gray;">Books</p>
+                        <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">21.00$</p>
+                    </div>
+                </div>
+        
+                
+                <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center; flex-direction: column;  min-width: 280px;">
+                    <div class="book1-box">
+                        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <img src="img/book8.jpg" alt="">
+                        </div>
+                        <div class="book1-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                        <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+        
+                    <div class="book1-info">
+                        <p>Stop overthinking</p>
+                        <p style="color: gray;">Books</p>
+                        <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">18.00$</p>
+                    </div>
+                </div>
+        
+                
+                <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center; flex-direction: column;  min-width: 280px;">
+                    <div class="book1-box">
+                        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                            <img src="img/book11.jpg" alt="">
+                        </div>
+                        <div class="book1-icon">
+                            <span><ion-icon name="shuffle-outline"></ion-icon></span>
+                            <span><ion-icon name="search-outline"></ion-icon></span>
+                            <span><ion-icon name="heart-outline"></ion-icon></span>
+                        </div>
+                        <button class="book1-btn1"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+        
+                    <div class="book1-info">
+                        <p>The silva mind control method</p>
+                        <p style="color: gray;">Books</p>
+                        <p style="color: #a99184; font-weight: 700; font-family: Verdana, Geneva, Tahoma, sans-serif;">15.00$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>    
+</section>
+
+
+<section class="book-fair">
+
+    <div class="book1" style="text-align: center; margin-bottom: 80px;">
+        <p style="font-family: 'Dancing Script', cursive;font-size: 30px; color: #594B43;" >News</p>
+        <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 34px;">Book fairs</p>
+        <p style="color: gray ;">There are many bookstores all over Vietnam, where you can read and buy books and also where you can find friends with the same interests as you.</p>
+    </div>
+
+    <div class="swiper mySwiper3">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide news">
+                <img src="img/pic8.jpg" alt="">
+                <div class="news-info">
+                    <div style="width: 70%;">
+                        <p style="background-color: #594B43; color: white;">RECENT BOOK FAIR</p>
+                        <P style="margin-bottom: 20px; color: white;">Son Tra book fair</P>
+                        <div class="news-share" >
+                            <img src="img/pic3.jpg" alt="">
+                            <label for="">S.Roger</label>
+                            <span style="position: relative; margin-right: 20px;">
+                                <ion-icon style="font-size: 20px;"  name="chatbox-outline"></ion-icon>
+                                <label class="news-Notification">1</label>
+                            </span>
+                            <ion-icon style="font-size: 20px;" name="share-social-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-time">March <br> 2023</div>
+            </div>
+
+            <div class="swiper-slide news">
+                <img src="img/pic7.jpg" alt="">
+                <div class="news-info">
+                    <div style="width: 70%;">
+                        <p style="background-color: #594B43;">RECENT BOOK FAIR</p>
+                        <P style="margin-bottom: 20px;">Trans-Vietnamese book fair</P>
+                        <div class="news-share" >
+                            <img src="img/pic3.jpg" alt="">
+                            <label for="">S.Roger</label>
+                            <span style="position: relative; margin-right: 20px;">
+                                <ion-icon style="font-size: 20px;"  name="chatbox-outline"></ion-icon>
+                                <label class="news-Notification">2</label>
+                            </span>
+                            <ion-icon style="font-size: 20px;" name="share-social-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-time"> November <br> 2023</div>
+            </div>
+
+
+            <div class="swiper-slide news">
+                <img src="img/pic5.jpg" alt="">
+                <div class="news-info">
+                    <div style="width: 70%;">
+                        <p style="background-color: #594B43;">RECENT BOOK FAIR</p>
+                        <P style="margin-bottom: 20px;">Nha Nam book fair</P>
+                        <div class="news-share" >
+                            <img src="img/pic3.jpg" alt="">
+                            <label for="">S.Roger</label>
+                            <span style="position: relative; margin-right: 20px;">
+                                <ion-icon style="font-size: 20px;"  name="chatbox-outline"></ion-icon>
+                                <label class="news-Notification">5</label>
+                            </span>
+                            <ion-icon style="font-size: 20px;" name="share-social-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-time">May <br> 2023</div>
+            </div>
+
+
+            <div class="swiper-slide news">
+                <img src="img/pic9.jpg" alt="">
+                <div class="news-info">
+                    <div style="width: 70%;">
+                        <p style="background-color: #594B43;">RECENT BOOK FAIR</p>
+                        <P style="margin-bottom: 20px;">Ha Noi book fair</P>
+                        <div class="news-share" >
+                            <img src="img/pic3.jpg" alt="">
+                            <label for="">S.Roger</label>
+                            <span style="position: relative; margin-right: 20px;">
+                                <ion-icon style="font-size: 20px;"  name="chatbox-outline"></ion-icon>
+                                <label class="news-Notification">8</label>
+                            </span>
+                            <ion-icon style="font-size: 20px;" name="share-social-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-time">July <br> 2023</div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<section style=" margin-top: 100px; padding: 0;">
+    <div class="insta">
+        <div class="insta-pic">
+            <img src="img/pic1.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>2323</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>1122</label>
+            </div>
+        </div>
+        <div class="insta-pic">
+            <img src="img/pic2.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>1000</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>1452</label>
+            </div>
+        </div>
+        <div class="insta-pic">
+            <img src="img/pic3.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>4523</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>1432</label>
+            </div>
+        </div>
+        <div class="insta-pic">
+            <img src="img/pic4.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>2763</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>7122</label>
+            </div>
+        </div>
+        <div class="insta-pic">
+            <img src="img/pic5.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>2533</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>75652</label>
+            </div>
+        </div>
+        <div class="insta-pic">
+            <img src="img/pic6.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>2523</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>8122</label>
+            </div>
+        </div>
+        <div class="insta-pic">
+            <img src="img/pic7.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>2323</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>1122</label>
+            </div>
+        </div>
+        <div class="insta-pic">
+            <img src="img/pic8.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>26573</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>6522</label>
+            </div>
+        </div>
+        <div class="insta-pic">
+            <img src="img/pic9.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>8723</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>54622</label>
+            </div>
+        </div>
+        <div class="insta-pic">
+            <img src="img/pic10.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>2623</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>554622</label>
+            </div>
+        </div>
+        <div class="insta-pic">
+            <img src="img/category-3.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>5423</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>54622</label>
+            </div>
+        </div>
+        <div class="insta-pic">
+            <img src="img/waves.jpg" alt="">
+            <div class="insta-view">
+                <label for=""><ion-icon name="heart-outline" style="margin-right: 5px;"></ion-icon>2623</label>
+                <label for=""><ion-icon name="chatbox-outline" style="margin-right: 5px;"></ion-icon>6922</label>
+            </div>
+        </div>
+        <div class="insta-info">
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;">INSTAGRAM</p>
+            <P style="color: lightgray;">@Lit_Book</P>
+            <p style="color: gray;">We are happy if you contribute ideas or support us at INSTAGRAM</p>
+        </div>
+    
+    </div> 
+</section>
+
+<footer style=" margin: 100px 0 100px 0;">
+    <div class="footer">
+        <div class="footer-box" >
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: black; font-size: 25px;">Lit.</p>
+            <p>  We are always there when you need us</p>
+            <p><ion-icon name="send-outline"></ion-icon> 451 Wall Street, UK, London</p>
+            <p><ion-icon name="phone-portrait-outline"></ion-icon> Phone: (064) 332-1233</p>
+            <p><ion-icon name="mail-outline"></ion-icon> Fax: (099) 453-1357</p>
+        </div>
+    
+        <div class="footer-box">
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;">RECENT POST</p>
+            <div style="display: flex; gap: 20px; padding: 20px; border-bottom: 1px solid gray ;">
+                <img style="height: 80px; width: 80px; object-fit: cover; border-radius: 5px; " src="img/pic1.jpg" alt="">
+                <div>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;">A companion for extra sleeping</p>
+                    <p>July 23, 2016 <span style="margin-left: 10px;">1 comment</span></p>
+                </div>
+            </div>
+    
+            <div style="display: flex; gap: 20px; padding: 20px;">
+                <img style="height: 80px; width: 80px; object-fit: cover; border-radius: 5px; " src="img/pic1.jpg" alt="">
+                <div>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;">Outdoor seating collection inspiration</p>
+                    <p>July 23, 2016 <span style="margin-left: 10px;">4 comment</span></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-box">
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;">OUR STORES</p>
+            <p>Las Vegas</p>
+            <p>Chicago</p>
+            <p>Los Angeles</p>
+            <p>Edinburgh</p>
+            <p>London SF</p>
+            <p>New York</p>
+        </div>
+    
+        <div class="footer-box">
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;">USEFUL LINKS</p>
+            <p>Our Sitemap</p>
+            <p>Latest News</p>
+            <p>Contact Us</p>
+            <p>Terms & Conditions</p>
+            <p>Returns</p>
+            <p>Privacy Policy</p>
+        </div>
+    
+        <div class="footer-box">
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;">FOOTER MENU</p>
+            <p>Latest News</p>
+            <p>Contact Us</p>
+            <p>Woman Dress</p>
+            <p>New Collection</p>
+            <p>Instagram profile</p>
+            <p>Privacy Policy</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="foreign.js"></script>
+
+</body>
+</html>
