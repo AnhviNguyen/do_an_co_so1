@@ -72,11 +72,10 @@
       </script>
     
     <header>
-        <a href="#" class="logo">Lit.</a>
+        <a href="#" class="logo">Readnow</a>
         <nav class="navbar">
             <a class="active" href="index.html" id="home">Home</a>
             <a href="list.html">List</a>
-            <a href="foreign.html">Foreign books</a>
             <a href="about.html">About</a>
             <a href="#" class="header-login-btn">Login</a>
             <span><ion-icon class="search-icon" name="search-outline"></ion-icon></span>
@@ -84,7 +83,6 @@
         <div class="navbar-after">
             <a href="index.html" >Home</a> 
             <a href="list.html">List</a>
-            <a href="foreign.html">Foreign books</a>
             <a href="about.html">About</a>
             <a href="#" class="header-login-btn">Login</a>
         </div>
@@ -97,68 +95,67 @@
         <i class="fa fa-times" aria-hidden="true" id="close"></i>
    </form>
 
-
-
-    <form class="login-register">
-        <div class="wrapped"> 
-            <span class="close"><ion-icon name="close-outline"></ion-icon></span>
-            <div class="form-box-login">
-                <div class="box-login">
-                    <h2>Login</h2>
-                    <form action="">
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                        <input type="text" required>
-                        <label for="">Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></ion-icon></span>
-                        <input type="password" required>
-                        <label for="">Password</label>
-                    </div>
-                    <div class="renember-forgot">
-                        <label for=""><input type="checkbox">  Renember me</label>
-                        <a href="">Fogot Password</a>
-                    </div>
-                    <button class="login-btn">Login</button>
-                    <div class="login-register">
-                        <p>Don't have an account </p>
-                        <a href="#" class="register-link">Register</a>
-                    </div>
-                    </form>
+<form class="login-register">
+    <div class="wrapped"> 
+        <span class="close"><ion-icon name="close-outline"></ion-icon></span>
+        <div class="form-box-login">
+            <div class="box-login">
+                <h2>Login</h2>
+                <form action="">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" id="email" required>
+                    <label for="">Email</label>
                 </div>
-
-                <div class="box-register">
-                    <h2>Registration</h2>
-                    <form action="">
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                        <input type="text" required>
-                        <label for="">Username</label>
-                    </div>                    
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                        <input type="text" required>
-                        <label for="">Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></ion-icon></span>
-                        <input type="password" required>
-                        <label for="">Password</label>
-                    </div>
-                    <div class="renember-forgot">
-                        <label for=""><input type="checkbox">I agree to the terms & conditions</label>
-                    </div>
-                    <button class="login-btn">Register</button>
-                    <div class="login-register">
-                        <p>Already have an account </p>
-                        <a href="#" class="login-link">Login</a>
-                    </div>
-                    </form>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></ion-icon></span>
+                    <input type="password" id="password"  required>
+                    <label for="">Password</label>
                 </div>
+                <div class="renember-forgot">
+                    <label for=""><input type="checkbox">Remember me</label>
+                    <a href="">Fogot Password</a>
+                </div>
+                <button class="login-btn" onclick="kiemTraEmail()">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account </p>
+                    <a href="#" class="register-link">Register</a>
+                </div>
+                </form>
+            </div>
+
+            <div class="box-register">
+                <h2>Registration</h2>
+                <form action="">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label for="">Username</label>
+                </div>                    
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" id="email3" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></ion-icon></span>
+                    <input type="password" id="password3" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="renember-forgot">
+                    <label for=""><input type="checkbox" id="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button class="login-btn" onclick="kiemTraEmail3()">Register</button>
+                <div class="login-register">
+                    <p>Already have an account </p>
+                    <a href="#" class="login-link">Login</a>
+                </div>
+                </form>
             </div>
         </div>
-    </form>
+    </div>
+</form>
+
 
     <section class="about">
         <div class="about_bg">
