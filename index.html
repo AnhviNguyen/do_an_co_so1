@@ -14,6 +14,62 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+<script type="text/javascript">
+    function kiemTraEmail2() {
+      var input = document.getElementById("email2").value;
+      var regex = /\S+@\S+\.\S+/; // Định dạng email
+
+      if (regex.test(input)) {
+        alert("Cảm ơn bạn đã đăng ký!");
+        document.getElementById("email2").value = "";
+
+      } else {
+        alert("Gmail không đúng định dạng. Vui lòng nhập lại!");
+      }
+    }
+
+    function kiemTraEmail() {
+  var input = document.getElementById("email").value;
+  var regex = /\S+@\S+\.\S+/; // Định dạng email
+
+  if (regex.test(input)) {
+    var password = document.getElementById("password").value;
+        if (password.length >= 8) {
+            alert("Đăng nhập thành công!");
+        } else {
+            alert("Mật khẩu phải có ít nhất 8 kí tự!");
+        }
+  } else {
+    alert("Gmail không đúng định dạng. Vui lòng nhập lại!");
+    document.getElementById("email").value = "";
+
+
+  }
+}
+
+function kiemTraEmail3() {
+  var input = document.getElementById("email3").value;
+  var regex = /\S+@\S+\.\S+/; // Định dạng email
+
+  if (!checkbox.checked) {
+         alert("Bạn phải đồng ý với chính sách và điều khoản trước khi đăng ký!");
+return;
+}
+  if (regex.test(input)) {
+    var password = document.getElementById("password3").value;
+        if (password.length >= 8) {
+            alert("Đăng ký thành công");
+        } else {
+            alert("Mật khẩu phải có ít nhất 8 kí tự!");
+        }
+
+  } else {
+    alert("Gmail không đúng định dạng. Vui lòng nhập lại!");
+    document.getElementById("email3").value = "";
+
+  }
+}
+  </script>
 <body>
      <header>
         <a href="#" class="logo">Lit.</a>
